@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body__backgroundColor--grey {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee6e6;
+}
+
+.header {
+    text-align: center;
+    background-color: #65a28372;
+    margin: 20px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.changeBackgroundButton{
+background-color: #044819;
+color: #dcecdc;
+padding: 10px;
+border-radius: 5px;
+
+}
+
+.footer {
+    text-align: center;
+    margin: 50px;
+    border: 1px dashed #360505;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.someHeaderBelow {
+    border: 3px double crimson;
+    background-color: bisque;
+    color: rgb(90, 18, 18);
+}

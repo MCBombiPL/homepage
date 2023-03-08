@@ -1,0 +1,23 @@
+.navigation {
+    list-style: none;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #457a4b;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.navigation__link:hover {
+    text-decoration: underline;
+}
+
+.navigation__link:focus {
+    outline: 1px solid currentColor;
+}
+
+.navigation__link:active {
+    background-color: #eff7ef;
+}

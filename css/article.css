@@ -1,0 +1,33 @@
+.article__primaryHeader--hidingText {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 5px;
+    color: darkred;
+    font-weight: 700;
+}
+
+.aside {
+    width: 20%;
+    padding-left: 10px;
+    margin-left: 10px;
+    float: right;
+    box-shadow: inset 40px -1px 10px -40px #dd6e2e;
+    color: #78260b;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.aside__paragraph {
+    margin: auto;
+}
+
+.article__primaryHeader {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.article__footer {
+    color: rgb(2, 36, 2);
+    font-size: 12px;
+}

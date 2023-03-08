@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praca domowa z modułu 5.</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">Praca domowa z modułu 5.</header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="navigation__link" href="#article__primaryHeader">Artykuł o serku Staszku</a></li>
+            <li><a class="navigation__link" href="#articleHeaderHidingButton">Przycisk usuwający nagłówek</a></li>
+            <li><a class="navigation__link" href="#changeFooterButton">Przycisk zmieniający tekst stopki artykułu</a>
+            </li>
+            <li><a class="navigation__link" href="#table">Tabela lotów</a></li>
+            <li><a class="navigation__link" href="#changeHeaderColorButton">Przycisk zmieniający kolor nagłówka
+                    tabeli</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <article>
+            <h1 id="article__primaryHeader" class="article__primaryHeader js-article__primaryHeader">Sadystka przedłuża
+                agonię serka w lodówce na
+                kolejne <i>"może
+                    jeszcze zjem"</i>
+            </h1>
+            <button id="articleHeaderHidingButton" class="js-articleHeaderHidingButton">Usuń nagłówek!</button><span
+                class="article__primaryHeader--hidingText js-article__primaryHeader--hidingText"></span>
+            <h2>Czuje oddech pleśni na sreberku i wie, że to tylko kwestia czasu. Nie ma przed nim przyszłości.
+                Cierpi.
+                Chce
+                mieć to jak najszybciej za sobą. Nie ma już siły walczyć. Dwutygodniowy serek śmietankowy
+                <b>Staszek</b>
+                nawet
+                nie
+                pamięta, czy jest paprykowy, czy pomidorowy. Mimo tego 24-letnia degeneratka nadal trzyma go przy
+                życiu
+                w
+                lodówce.
+            </h2>
+            <img width="400" src="https://m.aszdziennik.pl/c759330398caaa617e3cdd9e45326c22,1500,0,0,0.webp"
+                alt="spleśniały serek śmietankowy">
+
+
+            <p>Trafił tu <em>dwa tygodnie temu</em> razem zbrzoskwinią i jogurtem naturalnym.</p>
+            <aside class="aside">
+                <p class="aside__paragraph">"Powolna agonia trwa już dwa tygodnie. Za każdym razem, gdy tylko drzwi
+                    lodówki się
+                    otwierają, serek
+                    Staszek ma nadzieję, że oto zaczyna się jego ostatnia droga. Ma dość. Gnije od środka."</p>
+            </aside>
+            <p><i>"To moje miejsce na resztę życia. Doczekam tu końca swoich dni"</i> - pomyślał serek Staszek. Gdy po
+                uchyleniu
+                drzwi
+                lodówki zapaliło się światełko, serek zauważył wyjedzony do końca słoik nutelli i talerzyk, na którym
+                zostały
+                tylko okruszki po serniku. <i>"Zadbają tu o mnie do ostatniego grama"</i> - myślał.</p>
+
+            <p>Zaczęło się dobrze. Posmarowano nim świeżą kajzerkę, udekorowano plasterkiem pomidora i odrobiną soli
+                oraz
+                pieprzu. O, jeszcze listek sałaty. Czuł się potrzebny i ważny. Doceniany. Tak było tylko przez dwa dni.
+                Poczuł,
+                że coś jest nie tak, gdy drzwi otwierały się po raz kolejny, ale nie dla niego.</p>
+
+            <p>Dla coli, ketchupu, masła: tak. Ale nie dla serka Staszka, który nie dał z siebie wszystkiego, a
+                najwyraźniej
+                został już zapomniany. Powolna agonia trwa już dwa tygodnie. Za każdym razem, gdy tylko drzwi lodówki
+                się
+                otwierają, serek Staszek ma nadzieję, że oto zaczyna się jego ostatnia droga. <strong>Ma dość.</strong>
+                Gnije od środka. Ale nikt
+                go już nie chce. Nikt o niego nie pyta.</p>
+
+            <p>Tak jak o tę połówkę brzoskwini z półki wyżej, czekającą od dwóch tygodni na godny pogrzeb, i o
+                ten jogurt naturalny, który z powodu znieczulicy umiera po cichu, tracąc datę ważności do spożycia.</p>
+
+            <p class="article__footer"><b>To jest ASZdziennik. Wszystkie cytaty i wydarzenia zostały zmyślone.</b></p>
+
+            <button id="changeFooterButton" class="changeFooterButton">Zmień stopkę artykułu!</button>
+        </article>
+
+        <div id="table" class="tableContainer">
+            <table class="table">
+                <caption class="table__caption">Plany wylotowe na 2023 rok</caption>
+                <thead class="table__thead">
+                    <tr class="table__row table__colHeader">
+                        <th class="table__cell" scope="col">Dokąd</th>
+                        <th class="table__cell" scope="col">Kiedy</th>
+                        <th class="table__cell" scope="col">Linia lotnicza</th>
+                        <th class="table__cell" scope="col">Czas trwania lotu</th>
+                        <th class="table__cell" scope="col">Czy drogo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Hiszpania</th>
+                        <td class="table__cell">Luty</td>
+                        <td class="table__cell">Ryanair</td>
+                        <td class="table__cell">3-6h</td>
+                        <td class="table__cell" rowspan="3">Nie</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Malta</th>
+                        <td class="table__cell">Marzec</td>
+                        <td class="table__cell">PLL LOT</td>
+                        <td class="table__cell" rowspan="3">0-3h</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Grecja</th>
+                        <td class="table__cell">Maj</td>
+                        <td class="table__cell">Wizzair</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Grecja</th>
+                        <td class="table__cell">Lipiec</td>
+                        <td class="table__cell">Aegean</td>
+                        <td class="table__cell" rowspan="2">Trochę</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Turcja</th>
+                        <td class="table__cell">Sierpień</td>
+                        <td class="table__cell">Turkish Airlines</td>
+                        <td class="table__cell">3-6h</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Włochy</th>
+                        <td class="table__cell">Październik</td>
+                        <td class="table__cell">Wizzair</td>
+                        <td class="table__cell">0-3h</td>
+                        <td class="table__cell">Nie</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--rowHeader" scope="row">Kuba</th>
+                        <td class="table__cell">Grudzień</td>
+                        <td class="table__cell">Lufthansa</td>
+                        <td class="table__cell">Ponad 6h</td>
+                        <td class="table__cell">Tak</td>
+                    </tr>
+                </tbody>
+                <tfoot class="table__foot">
+                    <tr class="table__row">
+                        <th class="table__cell table__total" scope="row" colspan="4">Razem ile lotów</th>
+                        <td class="table__cell">7</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p>Nie podoba Ci się kolor nagłówka tabeli? Nie ma problemu!</p>
+        <button id="changeHeaderColorButton" class="js-changeHeaderColorButton">Zmień kolor nagłówka tabeli!</button>
+
+        <p><button class="changeBackgroundButton js-changeBackgroundButton">Zmień tło strony na <span
+                    class="js-body__backgroundColor--change">szare</span></button>
+    </main>
+    <footer class="footer">Próbna praca domowa YouCode 2023<br>@Maciej</footer>
+</body>
+
+</html>
