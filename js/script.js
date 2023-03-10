@@ -1,31 +1,76 @@
-console.log("Hello world! Zacząłem używać Gita");
+{
+    const welcome = () => {
+        console.log("Hello world! Zacząłem używać Gita");
+    }
+    welcome();
+}
 
-let primaryHeader = document.querySelector(".js-article__primaryHeader");
-let articleHeaderHidingButton = document.querySelector(".js-articleHeaderHidingButton");
-let primaryHeaderHidingText = document.querySelector(".js-article__primaryHeader--hidingText");
+{
+    const removePrimaryHeader = () => {
 
-articleHeaderHidingButton.addEventListener("click", () => {
-    primaryHeader.remove();
-    primaryHeaderHidingText.innerText = "Usunięto nagłówek!";
-});
+        const primaryHeader = document.querySelector(".js-article__primaryHeader");
+        const primaryHeaderHidingText = document.querySelector(".js-article__primaryHeader--hidingText");
 
-let articleFooter = document.querySelector(".article__footer");
-let changeFooterButton = document.querySelector(".changeFooterButton");
+        primaryHeader.remove();
+        primaryHeaderHidingText.innerText = "Usunięto nagłówek!";
+    }
 
-changeFooterButton.addEventListener("click", () => {
-    articleFooter.innerText = "Wszyscy byśmy chcieli takich artykułów w Wyborczej";
-});
+    const hideArticleHeaderClick = () => {
+        const articleHeaderHidingButton = document.querySelector(".js-articleHeaderHidingButton");
 
-let tableRow = document.querySelector(".table__row");
-let changeHeaderColorButton = document.querySelector(".js-changeHeaderColorButton");
+        articleHeaderHidingButton.addEventListener("click", removePrimaryHeader);
+    }
+    hideArticleHeaderClick();
+}
 
-changeHeaderColorButton.addEventListener("click", () => { tableRow.classList.toggle("table__row--yellow") })
+{
+    const changeFooterText = () => {
 
-let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
-let body = document.querySelector(".body");
-let nextBodyBackgroundColor = document.querySelector(".js-body__backgroundColor--change");
+        const articleFooter = document.querySelector(".article__footer");
 
-changeBackgroundButton.addEventListener("click", () => {
-    body.classList.toggle("body__backgroundColor--grey");
-    nextBodyBackgroundColor.innerText = body.classList.contains("body__backgroundColor--grey") ? "białe" : "szare";
-});
+        articleFooter.innerText = "Wszyscy byśmy chcieli takich artykułów w Wyborczej";
+    }
+
+    const changeFooterClick = () => {
+        const changeFooterClick = document.querySelector(".changeFooterButton");
+
+        changeFooterClick.addEventListener("click", changeFooterText);
+    }
+    changeFooterClick();
+}
+
+{
+    const toggleTableHeader = () => {
+
+        const tableRow = document.querySelector(".table__row");
+
+        tableRow.classList.toggle("table__row--yellow")
+    }
+
+    const toggleTableHeaderClick = () => {
+        const changeHeaderColorButton = document.querySelector(".js-changeHeaderColorButton");
+
+        changeHeaderColorButton.addEventListener("click", toggleTableHeader);
+    }
+
+    toggleTableHeaderClick();
+}
+
+{
+    const toggleBackground = () => {
+
+        const body = document.querySelector(".body");
+        const nextBodyBackgroundColor = document.querySelector(".js-body__backgroundColor--change");
+
+        body.classList.toggle("body__backgroundColor--grey");
+        nextBodyBackgroundColor.innerText = body.classList.contains("body__backgroundColor--grey") ? "białe" : "szare";
+    }
+
+    const toggleBackgroundClick = () => {
+
+        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+
+        changeBackgroundButton.addEventListener("click", toggleBackground);
+    }
+    toggleBackgroundClick();
+}
